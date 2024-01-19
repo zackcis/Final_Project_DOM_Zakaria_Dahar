@@ -1,0 +1,516 @@
+
+@import ./_variables
+@import ./_fonts
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+@import ../../node_modules/@fortawesome/fontawesome-free/css/all.css
+@import ./_allModules
+*
+    margin: 0
+    padding: 0
+body
+    height: 100vh
+    width: 100vw
+.myheader
+    // width: 100%
+    // height: 10vh
+    // background-color: red
+    .navi
+        display: flex
+        justify-content: space-around !important
+        .logo
+            padding-right: 12vw
+            padding-left: 3vw
+            span
+                color: rgba(206,18,18,255)
+.potona
+    background-color: rgba(206,18,18,255) !important 
+    border-radius: 20px !important
+    color: white !important
+    border: none !important
+    margin-right: 5vw !important
+    width: 200px !important
+    height: 50px !important
+    &:hover
+        background-color: rgb(226, 122, 122) !important
+.lista
+    li
+        padding-inline:20px
+        &:hover
+            border-bottom: solid 2px rgba(206,18,18,255)
+.hero-sec
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 70vh
+    width: 100%
+    background-color: rgba(238,238,238,255)
+    // border-bottom: red solid 3px
+.left-hero
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // align-items: center
+    // background-color: aqua
+    width: 50%
+    height: 60%
+    padding-left: 4vw
+    .hero-title
+        width: 20vw
+    .hero-desc
+        width: 30vw
+        padding-top: 30px
+        padding-bottom: 30px
+    .hero-but-div
+        width: 100%
+        display: flex
+        // background-color: green
+    .book-but
+        background-color: rgb(214, 7, 7)
+        border-radius: 20px
+        color: white
+        border: none
+        margin-right: 5vw
+        width: 200px
+        height: 50px
+        box-shadow: 2px 2px 10px rgb(214, 7, 7)
+        &:hover
+            background-color: rgb(226, 122, 122)
+    .watch-but
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 200px
+        background: none
+        border: none
+        font-size: 25px
+        &:hover
+            color: rgba(206,18,18,255)
+        i
+            margin-right: 10px
+            color: red
+.right-hero
+    height:60%
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+.about-sec
+    // border-bottom: solid black 3px
+    height: 100vh
+    width: 100vw
+    // background-color: black
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .in-title
+        padding: 10px
+    .about-title
+        padding: 20px
+    .about-big-div
+        display: flex
+        // gap: 10%
+        width: 80%
+        .about-left
+            position: relative
+            background-image: url(../images/about.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            width: 60%
+            height:70vh
+            display: flex
+            justify-content: center
+            align-items: center
+            // margin-left: 8vw
+            .upon-cover
+                position: absolute
+                bottom: 40px
+                background: white
+                padding: 15px
+                padding-inline: 60px
+        .about-right
+            width: 50%
+            padding-left: 2vw
+            // background-color: aqua
+            .about-first-p
+                padding: 10px
+            .desc-icon
+                padding: 10px
+                i
+                    padding: 5px
+                    color: rgba(206,18,18,255)
+        .about-long-desc
+            width: 70%
+            padding: 30px
+        .about-video
+            background-color: black
+            width: 80%
+            height: 44%
+            position: relative
+            background-image: url(../images/about-2.jpg)
+            background-size: cover
+            background-repeat: no-repeat
+            display: flex
+            justify-content: center
+            align-items: center
+            i
+                position: absolute
+
+                color: rgba(206,18,18,255)
+                font-size: 150px
+            i:hover
+                cursor: pointer
+                
+.yummy-sec
+    height: 70vh
+    width: 100%
+    .cards-container
+        background-color: rgba(238,238,238,255)
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .why-card
+            background-color: rgba(206,18,18,255)
+            height: 50vh
+            width: 27vw
+            color: white
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            transition: all 0.5s
+            &:hover   
+                transform: scale(1.1)
+                
+            .Why-title
+                width: 70%
+            .Why-desc
+                width: 70%
+            .Why-button
+                width: 120px
+                height: 50px
+                border: none
+                background-color: #dd5a5a
+                border-radius: 20px
+                &:hover
+                    background-color: #df0606
+        .card
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            height: 40vh
+            width: 20vw
+            background-color: white
+            transition: all 0.5s
+            &:hover   
+                transform: scale(1.1)
+            i
+                font-size: 80px
+                color: rgba(206,18,18,255)
+                // background-color: #fae7e7
+                // border-radius: 10px
+            p
+                width: 70%
+                text-align: center
+.stats-sec
+    height: 40vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: white
+    .stats-big-div
+        display: flex
+        justify-content: space-between
+        width: 70%
+        padding-top: 15vh
+        .stats-clients
+            display: flex
+            flex-direction: column
+            align-items: center
+            .stats-numbers
+                font-size: 50px
+.stats-backgroud
+    background-image: url(../images/stats-bg.jpg)
+    background-size: cover
+    width: 100%
+    z-index: -5
+    position: relative
+    background-attachment: fixed
+    &::after
+            content: ''
+            position: absolute
+            background-color: black
+            inset: 0
+            opacity: 30%
+            z-index: -1
+.menu-sec
+    height: 140vh
+    width: 100%
+.yummy-menu
+    color: rgba(206,18,18,255)
+.menu-choices
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
+    button
+        border: none
+        font-size: larger
+        border-bottom: 2px solid #060606
+        background: none
+        &:hover
+            color: rgba(206,18,18,255)
+        &:focus
+            color: rgba(206,18,18,255)
+            border-bottom: 2px solid rgba(206,18,18,255)
+.menu-first-page
+    background-color: aqua
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 105vh
+    gap: 3vw
+    .titles
+        text-align: center
+.menu-showing
+    background-color: red
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    gap: 3vw
+.food
+    text-align: center
+    width: 30vw
+    // display: flex
+    // flex-direction: column
+    // align-items: center
+    img
+        width: 15vw
+        margin-bottom: 1vh
+.carousel-sec
+    height: 100vh
+    width: 100vw
+    background-color: rgba(238,238,238,255)
+    border-bottom: solid black 5px
+.events-sec
+    height: 95vh
+    width: 100vw
+    background-color: pink
+.chef-sec
+    height: 100vh
+    width: 100vw
+    background-color: rgba(238,238,238,255)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .chef-intitle
+        padding: 10px
+    .chef-title
+        padding: 10px
+    .chef-cards-container
+        height: 80vh
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .chef-card
+            display: flex
+            flex-direction: column
+            // justify-content: space-around
+            align-items: center
+            height: 90%
+            width: 27vw
+            border: none
+            border-radius: 50px
+            // background-color: aqua
+            box-shadow: 2px 2px 10px black
+            transition: all 0.5s
+            &:hover   
+                transform: scale(1.1)
+            img
+                width: 100%
+                height: 480px
+                border-top-left-radius: 10px
+                border-top-right-radius: 10px
+            p
+                width: 70%
+                text-align: center
+.booking-sec
+    width: 100%
+    height: 78vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .booking-big-div
+        width: 80%
+        height: 80%
+        display: flex
+        justify-content: center
+        align-items: center
+        // border-radius: 10px
+        background-color: rgba(238,238,238,255)
+    form
+        display: flex
+        flex-wrap: wrap
+        margin-left: 50px
+        gap: 20px
+        input
+            width: 300px
+            height: 40px
+            border-radius: 10px
+            border: none
+        textarea
+            width: 90%
+            border-radius: 10px
+            border: none
+    .booking-button
+        background-color: rgba(206,18,18,255)
+        border-radius: 20px
+        color: white
+        border: none
+        margin-right: 5vw
+        margin-top: 3vh
+        width: 200px
+        height: 50px
+        &:hover
+            background-color: rgb(210, 137, 137)
+.gallery-sec
+    height: 80vh
+    width: 100%
+    background-color: orange
+.contact-sec
+    width: 100%
+    height: 180vh
+    // background-color: aqua
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    h1
+        padding-bottom: 20px
+    .contact-big-div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 80%
+        gap: 5vh
+        .contact-map
+            width: 100%
+            iframe
+                width: 100%
+        .contact-details-big-div
+            width: 100%
+            height: 100%
+            // display: flex
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 10px
+            .contact-details
+                width: 35vw
+                height: 13vh
+                background-color: rgba(238,238,238,255)
+                display: flex
+                // justify-content: center
+                align-items: center
+                transition: all 0.5s
+                &:hover 
+                    transform: scale(1.1)
+                i
+                    color: rgba(206,18,18,255)
+                    padding: 20px
+                    font-size: 50px
+        .form-big-div
+            width: 100%
+            height: 100%
+            // background-color: red
+            box-shadow: 2px 2px 10px black
+            form
+                display: flex
+                flex-wrap: wrap
+                margin-left: 50px
+                gap: 40px
+                input
+                    margin: 10px
+                    // padding: 40px
+                    width: 400px
+                    height: 50px
+                textarea
+                    width: 90%
+                    margin-bottom: 5px
+        .booking-button
+            background-color: rgba(206,18,18,255)
+            border-radius: 20px
+            color: white
+            border: none
+            margin-right: 5vw
+            width: 180px
+            height: 200px
+            &:hover
+                background-color: rgb(245, 152, 152)
+footer
+    height: 50vh
+    width: 100%
+    background-color: rgb(31, 31, 36)
+    .footer-big-div
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .footer-adress
+            padding-top: 60px
+            display: flex
+            width: 15vw
+            height: 20vh
+            display: flex
+            color: white
+            i
+                padding: 15px
+                font-size: 30px
+
+        .footer-opening
+            padding-top: 60px
+            width: 15vw
+            height: 20vh
+            display: flex
+            color: white
+            i
+                padding: 15px
+                font-size: 30px
+        .footer-reservation
+            padding-top: 60px
+            width: 15vw
+            height: 20vh
+            display: flex
+            color: white
+            i
+                padding: 15px
+                font-size: 30px
+
+        .footer-media
+            padding-top: 60px
+            width: 15vw
+            height: 20vh
+            color: white
+            i
+                padding: 15px
+                font-size: 30px
+    .ligne
+        color: white
+    .footer-copyright
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        p
+            text-align: center
+            width: 30%
+            color: white
