@@ -24,10 +24,18 @@ console.log(videodal);
 let mywatchbut = document.querySelector('.watch-but')
 console.log(mywatchbut);
 
+
+mywatchbut.addEventListener('click',()=>{
+    videodal.classList.toggle('d-none')
+})
+
+
 mysignupbut.addEventListener('click',()=>{
     mylogin.classList.remove('d-none')
     mysignup.classList.add('d-none')
 })
+
+
 myloginbut.addEventListener('click',()=>{
     mysignup.classList.remove('d-none')
     mylogin.classList.add('d-none')
