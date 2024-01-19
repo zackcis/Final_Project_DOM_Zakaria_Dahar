@@ -18,12 +18,12 @@ console.log(mylogin);
 let mysignup = document.querySelector('.sign-up')
 console.log(mysignup);
 let modalfooter = document.querySelector('.modal-footer')
-myloginbut.addEventListener('click',()=>{
-    mylogin.classList.toggle('d-none')
+mysignupbut.addEventListener('click',()=>{
+    mylogin.classList.remove('d-none')
     mysignup.classList.add('d-none')
 })
-mysignupbut.addEventListener('click',()=>{
-    mysignup.classList.toggle('d-none')
+myloginbut.addEventListener('click',()=>{
+    mysignup.classList.remove('d-none')
     mylogin.classList.add('d-none')
 })
 
