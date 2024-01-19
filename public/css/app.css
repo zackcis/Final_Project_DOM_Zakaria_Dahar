@@ -1,10 +1,14 @@
 @charset "UTF-8";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@font-face {
+  font-family: "fonti";
+  src: url(../fonts/GrapeNuts-Regular.ttf);
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11873,6 +11877,7 @@ body {
 .myheader .navi .logo {
   padding-right: 12vw;
   padding-left: 3vw;
+  font-family: fonti;
 }
 .myheader .navi .logo span {
   color: rgb(206, 18, 18);
@@ -11916,7 +11921,9 @@ body {
   padding-left: 4vw;
 }
 .left-hero .hero-title {
-  width: 20vw;
+  width: 25vw;
+  font-family: fonti;
+  font-size: 60px;
 }
 .left-hero .hero-desc {
   width: 30vw;
@@ -11978,6 +11985,7 @@ body {
 }
 .about-sec .about-title {
   padding: 20px;
+  font-family: fonti;
 }
 .about-sec .about-big-div {
   display: flex;
@@ -12174,7 +12182,6 @@ body {
 }
 
 .menu-first-page {
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12187,7 +12194,6 @@ body {
 }
 
 .menu-showing {
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12466,6 +12472,34 @@ footer .footer-copyright p {
   text-align: center;
   width: 30%;
   color: white;
+}
+
+.color-but {
+  background-color: rgb(206, 18, 18);
+  color: white;
+}
+
+.carousel {
+  padding: 20px;
+  height: 40%;
+}
+
+.carousel-item {
+  border-left: solid 3px rgb(206, 18, 18);
+  width: 50vw;
+  display: flex !important;
+}
+.carousel-item .item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item .carou-data {
+  height: 102vh;
+}
+
+.person img {
+  border-radius: 50%;
+  width: 200px;
 }
 
 /*# sourceMappingURL=app.css.map */
