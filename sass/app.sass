@@ -3,3 +3,37 @@
 @import ../../node_modules/bootstrap/scss/bootstrap.scss
 @import ../../node_modules/@fortawesome/fontawesome-free/css/all.css
 @import ./_allModules
+*
+    margin: 0
+    padding: 0
+body
+    height: 100vh
+    width: 100vw
+    //HEADER_PART
+.myheader
+    // width: 100%
+    // height: 10vh
+    // background-color: red
+    .navi
+        display: flex
+        justify-content: space-around !important
+        .logo
+            padding-right: 12vw
+            padding-left: 3vw
+            span
+                color: rgba(206,18,18,255)
+.potona
+    background-color: rgba(206,18,18,255) !important 
+    border-radius: 20px !important
+    color: white !important
+    border: none !important
+    margin-right: 5vw !important
+    width: 200px !important
+    height: 50px !important
+    &:hover
+        background-color: rgb(226, 122, 122) !important
+.lista
+    li
+        padding-inline:20px
+        &:hover
+            border-bottom: solid 2px rgba(206,18,18,255)
