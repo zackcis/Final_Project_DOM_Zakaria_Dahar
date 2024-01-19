@@ -18,6 +18,12 @@ console.log(mylogin);
 let mysignup = document.querySelector('.sign-up')
 console.log(mysignup);
 let modalfooter = document.querySelector('.modal-footer')
+
+let videodal = document.querySelector('.videodal')
+console.log(videodal);
+let mywatchbut = document.querySelector('.watch-but')
+console.log(mywatchbut);
+
 mysignupbut.addEventListener('click',()=>{
     mylogin.classList.remove('d-none')
     mysignup.classList.add('d-none')
